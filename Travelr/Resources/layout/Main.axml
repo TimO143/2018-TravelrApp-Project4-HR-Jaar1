@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <Button
+            android:text="Log in"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:id="@+id/btnLoginLogout"
+            android:background="@drawable/btnbackgroot"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_light"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp" />
+        <ImageButton
+            android:src="@drawable/accountinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnAccount"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="171.0dp"
+            android:layout_marginTop="15dp" />
+        <ImageButton
+            android:src="@drawable/btnsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnZoekLand"
+            android:background="#1e2537"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="12.5dp"
+            android:layout_marginRight="0.0dp" />
+        <TextView
+            android:text="Zoek land"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSendHelp"
+            android:textColor="#fdc2a7"
+            android:layout_marginEnd="30dp"
+            android:textAlignment="textEnd"
+            android:gravity="right"
+            android:layout_marginTop="13.0dp"
+            android:textSize="10sp"
+            android:layout_marginRight="0.0dp"
+            android:layout_marginLeft="0.0dp"
+            android:layout_marginBottom="2.5dp" />
+    </LinearLayout>
+    <TextView
+        android:text="Travelr"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTitle"
+        android:layout_marginTop="40dp"
+        android:textSize="50sp"
+        android:gravity="center" />
+    <Button
+        android:text="  Noord Europa"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="42.5dp"
+        android:layout_marginRight="42.5dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/btn_europa_delen"
+        android:id="@+id/btnNoordEuropa"
+        android:layout_marginBottom="0.0dp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+    <Button
+        android:text="  Oost Europa"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="42.5dp"
+        android:layout_marginRight="42.5dp"
+        android:layout_marginTop="0.25dp"
+        android:background="@drawable/btn_europa_delen"
+        android:id="@+id/btnOostEuropa"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+    <Button
+        android:text="  Zuid Europa"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="42.5dp"
+        android:layout_marginRight="42.5dp"
+        android:layout_marginTop="0.25dp"
+        android:background="@drawable/btn_europa_delen"
+        android:id="@+id/btnZuidEuropa"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+    <Button
+        android:text="  West Europa"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="42.5dp"
+        android:layout_marginRight="42.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="0.25dp"
+        android:background="@drawable/btn_europa_delen"
+        android:id="@+id/btnWestEuropa"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+    <TextView
+        android:text="Hulp nodig?"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSendHelp2"
+        android:textColor="#fdc2a7"
+        android:layout_marginEnd="30dp"
+        android:textAlignment="textEnd"
+        android:gravity="right"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp" />
+</LinearLayout>

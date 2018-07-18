@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglandinfo">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:descendantFocusability="beforeDescendants"
+android:focusableInTouchMode="true"
+        android:id="@+id/linearLayout1">
+        <ImageButton
+            android:src="@drawable/backarrowTransparent"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:id="@+id/btnBackLI" />
+        <TextView
+            android:text="Mijn account"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="190dp"
+            android:textStyle="bold"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:id="@+id/txtLandNaam" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="25dp">
+        <TextView
+            android:text="Gebruikersnaam:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="165dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtUsername"
+            android:layout_marginLeft="55dp"
+            android:textSize="18sp" />
+        <TextView
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtgetUsername"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3">
+        <TextView
+            android:text="User ID:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="165dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtUserID"
+            android:layout_marginLeft="55dp"
+            android:textSize="18sp" />
+        <TextView
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtgetUserID"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <ImageView
+        android:src="@drawable/imgstreep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView1"
+        android:layout_marginTop="5dp" />
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout4">
+            <TextView
+                android:text="Wachtwoord"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtWachtwoord"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="9.5dp" />
+            <EditText
+                android:id="@+id/txtgetoldpass"
+                android:layout_width="match_parent"
+                android:inputType="textPersonName"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginBottom="19.5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="9.0dp"
+                android:hint="Oud wachtwoord"
+                android:paddingLeft="10dp"
+                android:textColorHint="#FBA27A"
+                android:textColor="#FFF"
+                android:drawableLeft="@drawable/icon_wachtwoord2"
+                android:drawablePadding="10dp"
+                android:textSize="16sp" />
+            <EditText
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtgetnewpass"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Nieuw Wachtwoord"
+                android:paddingLeft="10dp"
+                android:layout_below="@id/txtgetoldpass"
+                android:layout_marginBottom="15.5dp"
+                android:textColorHint="#FBA27A"
+                android:textColor="#FFF"
+                android:drawableLeft="@drawable/icon_wachtwoord2"
+                android:drawablePadding="10dp"
+                android:textSize="16sp" />
+            <Button
+                android:text="Verander wachtwoord!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnVeranderwachtwoord"
+                android:textSize="17dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:height="60dp"
+                android:paddingTop="2dp"
+                android:background="@drawable/ButtonLoginStyle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:paddingBottom="5dp" />
+            <ImageView
+                android:src="@drawable/imgstreep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView1"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:text="Favorieten"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:textColor="#e77d4d"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtFavo1" />
+            <ImageButton
+                android:src="@android:drawable/ic_menu_gallery"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnFavo1" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:textColor="#e77d4d"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtFavo2" />
+            <ImageButton
+                android:src="@android:drawable/ic_menu_gallery"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnFavo2" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:textColor="#e77d4d"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtFavo3" />
+            <ImageButton
+                android:src="@android:drawable/ic_menu_gallery"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnFavo3" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:textColor="#e77d4d"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtFavo4" />
+            <ImageButton
+                android:src="@android:drawable/ic_menu_gallery"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnFavo4" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:textColor="#e77d4d"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtFavo5" />
+            <ImageButton
+                android:src="@android:drawable/ic_menu_gallery"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnFavo5" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:textColor="#e77d4d"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtFavo6" />
+            <ImageButton
+                android:src="@android:drawable/ic_menu_gallery"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/btnFavo6" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

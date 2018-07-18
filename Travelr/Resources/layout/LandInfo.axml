@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bglandinfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:id="@+id/linearLayout1">
+        <ImageButton
+            android:src="@drawable/backarrowTransparent"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:id="@+id/btnBackLI" />
+        <TextView
+            android:text="land"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="190dp"
+            android:textStyle="bold"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:id="@+id/txtLandNaam" />
+        <ImageButton
+            android:src="@drawable/recensie"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnRecensie"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="18dp" />
+        <ImageButton
+            android:src="@drawable/btnHome"
+            android:background="@android:color/transparent"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:id="@+id/btnHome" />
+    </LinearLayout>
+    <ImageButton
+        android:src="@drawable/NederlandInfo"
+        android:layout_marginTop="15dp"
+        android:background="#1e2537"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgLand" />
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fillViewport="true"
+        android:id="@+id/scrollView1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout2">
+            <TextView
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtLandVerhaal"
+                android:gravity="center"
+                android:paddingBottom="25sp"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout3">
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:src="@drawable/imgHoofdstad"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+                <TextView
+                    android:text="Hoofdstad"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/txtHoofdstadTitel"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:layout_marginRight="47dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <TextView
+                android:text="HoofdstadValue"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fdc2a7"
+                android:id="@+id/txtHoofdstad"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColorLink="#fdc2a7" />
+            <ImageView
+                android:src="@drawable/imgStreep"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/imageView5" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout4">
+                <ImageView
+                    android:src="@drawable/imgGerechten"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/imageView2" />
+                <TextView
+                    android:text="Gerechten"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/txtGerechtTitel"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <TextView
+                android:text="Gerecht1Value"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtGerecht1"
+                android:textColor="#fdc2a7"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColorLink="#fdc2a7" />
+            <TextView
+                android:text="Gerecht2Value"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtGerecht2"
+                android:textColor="#fdc2a7"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColorLink="#fdc2a7" />
+            <TextView
+                android:text="Gerecht3Value"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fdc2a7"
+                android:id="@+id/txtGerecht3"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColorLink="#fdc2a7" />
+            <ImageView
+                android:src="@drawable/imgStreep"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_height="10dp"
+                android:id="@+id/imageView5" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/linearLayout5">
+                <ImageView
+                    android:src="@drawable/imgBezienswaardigheid"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/imageView3" />
+                <TextView
+                    android:text="Bezienswaardigheden"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/txtBezienswaardigheidTitel"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:layout_marginRight="60dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <TextView
+                android:text="Bezienswaardigheid1Value"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txtBezienswaardigheid1"
+                android:textColor="#fdc2a7"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColorLink="#fdc2a7" />
+            <TextView
+                android:text="Bezienswaardigheid2Value"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtBezienswaardigheid2"
+                android:textColor="#fdc2a7"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColorLink="#fdc2a7" />
+            <TextView
+                android:text="Bezienswaardigheid3Value"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtBezienswaardigheid3"
+                android:textColor="#fdc2a7"
+                android:textSize="18sp"
+                android:gravity="center_horizontal"
+                android:textColorLink="#fdc2a7" />
+            <TextView
+                android:text="Bezienswaardigheid4Value"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtBezienswaardigheid4"
+                android:textColor="#fdc2a7"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColorLink="#fdc2a7" />
+            <TextView
+                android:text="Bezienswaardigheid5Value"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtBezienswaardigheid5"
+                android:textColor="#fdc2a7"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColorLink="#fdc2a7" />
+            <ImageView
+                android:src="@drawable/imgStreep"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/imageView5" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/linearLayout5">
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:src="@drawable/imgNatuurgebied"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+                <TextView
+                    android:text="Natuurgebieden"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtNatuurgebiedenTitel"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="60dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <TextView
+                android:text="Natuurgebied1Value"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNatuurgebied1"
+                android:textSize="18sp"
+                android:textColor="#fdc2a7"
+                android:gravity="center_horizontal"
+                android:textColorLink="#fdc2a7" />
+            <TextView
+                android:text="Natuurgebied2Value"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:id="@+id/txtNatuurgebied2"
+                android:textColor="#fdc2a7"
+                android:gravity="center_horizontal"
+                android:textColorLink="#fdc2a7" />
+            <TextView
+                android:text="Natuurgebied3Value"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:id="@+id/txtNatuurgebied3"
+                android:textColor="#fdc2a7"
+                android:gravity="center_horizontal"
+                android:textColorLink="#fdc2a7" />
+            <ImageView
+                android:src="@drawable/imgStreep"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/imageView5" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/linearLayout5">
+                <ImageView
+                    android:id="@+id/imgHotel"
+                    android:src="@drawable/imgHotel"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+                <TextView
+                    android:text="Hotels"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtHotelTitel"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="60dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <TextView
+                android:text="Hotel1Value"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtHotel1"
+                android:textColor="#fdc2a7"
+                android:textSize="18sp"
+                android:gravity="center_horizontal"
+                android:textColorLink="#fdc2a7" />
+            <TextView
+                android:text="Hotel2Value"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtHotel2"
+                android:textColor="#fdc2a7"
+                android:textSize="18sp"
+                android:gravity="center_horizontal"
+                android:textColorLink="#fdc2a7" />
+            <ImageView
+                android:src="@drawable/imgStreep"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/imageView5" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/linearLayout8">
+                <ImageView
+                    android:id="@+id/imgValuta"
+                    android:src="@drawable/imgValuta"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+                <TextView
+                    android:text="Valuta"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtValutaTitel"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="60dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <TextView
+                android:text="ValutaValue"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtValuta"
+                android:textSize="18sp"
+                android:textColor="#fdc2a7"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:textColorLink="#fdc2a7" />
+            <Button
+                android:text="Bevestig"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnAddFavorieten"
+                android:background="@drawable/btnbackgroot"
+                android:layout_marginRight="42.5dp"
+                android:layout_marginLeft="42.5dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/background_light" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

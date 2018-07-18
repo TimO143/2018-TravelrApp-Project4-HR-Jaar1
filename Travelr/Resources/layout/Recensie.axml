@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1e2537"
+    android:weightSum="3"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:id="@+id/linearLayout1">
+        <ImageButton
+            android:src="@drawable/backarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnRecensieBack"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:background="#1e2537" />
+        <TextView
+            android:text="Recensies"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/textView1"
+            android:textAllCaps="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:src="@drawable/btnhome"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnRecensieHome"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:background="#1e2537" />
+    </LinearLayout>
+    <TextView
+        android:text="PLAATS EEN RECENSIE"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:background="#1e2537"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#e77d4d"
+        android:textAllCaps="false" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/linearLayout3">
+        <TextView
+            android:text="Gebruikersnaam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtRGebruikersNaam"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp" />
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbRecensie"
+            android:numStars="5"
+            android:stepSize="1"
+            style="@style/CustomRatingBar"
+            android:layout_marginLeft="10dp" />
+        <EditText
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtRecensie" />
+        <Button
+            android:text="Bevestig"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/btnBevestig"
+            android:background="@drawable/btnbackgroot"
+            android:layout_marginRight="42.5dp"
+            android:layout_marginLeft="42.5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+<!-- RECENSIES VAN ANDERE GEBRUIKERS -->
+    <TextView
+        android:text="BEKIJK RECENSIES"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:gravity="center_horizontal"
+        android:textColor="#e77d4d"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp" />
+    <TextView
+        android:text="Er zijn nog geen recensies geplaatst."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtGeenRecensie"
+        android:gravity="center_horizontal" />
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/scrollView1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2">
+        <!-- REVIEW 1 -->
+            <TextView
+                android:text="Gebruiker naam"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNaamR1"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp" />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rbR1"
+                style="@style/CustomRatingBar"
+                android:progressTint="#bf9b30"
+                android:layout_weight="1"
+                android:stepSize="1"
+                android:numStars="5"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTextR1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp" />
+        <!-- REVIEW 2 -->
+            <TextView
+                android:text="Gebruiker naam"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNaamR2"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp" />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rbR2"
+                style="@style/CustomRatingBar"
+                android:progressTint="#bf9b30"
+                android:layout_weight="1"
+                android:stepSize="1"
+                android:numStars="5"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTextR2"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp" />
+        <!-- REVIEW 3 -->
+            <TextView
+                android:text="Gebruiker naam"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNaamR3"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp" />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rbR3"
+                style="@style/CustomRatingBar"
+                android:progressTint="#bf9b30"
+                android:layout_weight="1"
+                android:stepSize="1"
+                android:numStars="5"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTextR3"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp" />
+        <!-- REVIEW 4 -->
+            <TextView
+                android:text="Gebruiker naam"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNaamR4"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp" />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rbR4"
+                style="@style/CustomRatingBar"
+                android:progressTint="#bf9b30"
+                android:layout_weight="1"
+                android:stepSize="1"
+                android:numStars="5"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTextR4"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp" />
+        <!-- REVIEW 5 -->
+            <TextView
+                android:text="Gebruiker naam"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNaamR5"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp" />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rbR5"
+                style="@style/CustomRatingBar"
+                android:progressTint="#bf9b30"
+                android:layout_weight="1"
+                android:stepSize="1"
+                android:numStars="5"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTextR5"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp" />
+        <!-- REVIEW 6 -->
+            <TextView
+                android:text="Gebruiker naam"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNaamR6"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp" />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rbR6"
+                style="@style/CustomRatingBar"
+                android:progressTint="#bf9b30"
+                android:layout_weight="1"
+                android:stepSize="1"
+                android:numStars="5"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTextR6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp" />
+        <!-- REVIEW 7 -->
+            <TextView
+                android:text="Gebruiker naam"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNaamR7"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp" />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rbR7"
+                style="@style/CustomRatingBar"
+                android:progressTint="#bf9b30"
+                android:layout_weight="1"
+                android:stepSize="1"
+                android:numStars="5"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTextR7"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp" />
+        <!-- REVIEW 8 -->
+            <TextView
+                android:text="Gebruiker naam"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNaamR8"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp" />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rbR8"
+                style="@style/CustomRatingBar"
+                android:progressTint="#bf9b30"
+                android:layout_weight="1"
+                android:stepSize="1"
+                android:numStars="5"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTextR8"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp" />
+        <!-- REVIEW 9 -->
+            <TextView
+                android:text="Gebruiker naam"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNaamR9"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp" />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rbR9"
+                style="@style/CustomRatingBar"
+                android:progressTint="#bf9b30"
+                android:layout_weight="1"
+                android:stepSize="1"
+                android:numStars="5"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTextR9"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp" />
+        <!-- REVIEW 10 -->
+            <TextView
+                android:text="Gebruiker naam"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNaamR10"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp" />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rbR10"
+                style="@style/CustomRatingBar"
+                android:progressTint="#bf9b30"
+                android:layout_weight="1"
+                android:stepSize="1"
+                android:numStars="5"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTextR10"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp" />
+        <!-- REVIEW 11 -->
+            <TextView
+                android:text="Gebruiker naam"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNaamR11"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp" />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rbR11"
+                style="@style/CustomRatingBar"
+                android:progressTint="#bf9b30"
+                android:layout_weight="1"
+                android:stepSize="1"
+                android:numStars="5"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTextR11"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp" />
+        <!-- REVIEW 12 -->
+            <TextView
+                android:text="Gebruiker naam"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNaamR12"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp" />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rbR12"
+                style="@style/CustomRatingBar"
+                android:progressTint="#bf9b30"
+                android:layout_weight="1"
+                android:stepSize="1"
+                android:numStars="5"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTextR12"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp" />
+        <!-- REVIEW 13 -->
+            <TextView
+                android:text="Gebruiker naam"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNaamR13"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp" />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rbR13"
+                style="@style/CustomRatingBar"
+                android:progressTint="#bf9b30"
+                android:layout_weight="1"
+                android:stepSize="1"
+                android:numStars="5"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTextR13"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp" />
+        <!-- REVIEW 14 -->
+            <TextView
+                android:text="Gebruiker naam"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNaamR14"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp" />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rbR14"
+                style="@style/CustomRatingBar"
+                android:progressTint="#bf9b30"
+                android:layout_weight="1"
+                android:stepSize="1"
+                android:numStars="5"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTextR14"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp" />
+        <!-- REVIEW 15 -->
+            <TextView
+                android:text="Gebruiker naam"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNaamR15"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp" />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rbR15"
+                style="@style/CustomRatingBar"
+                android:progressTint="#bf9b30"
+                android:layout_weight="1"
+                android:stepSize="1"
+                android:numStars="5"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTextR15"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

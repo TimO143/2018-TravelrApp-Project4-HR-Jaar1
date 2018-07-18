@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_landen">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <ImageButton
+            android:src="@drawable/backarrow"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:background="#1e2537"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/btnBack" />
+        <TextView
+            android:text="KIES UW BESTEMMING"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTitle"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <TextView
+        android:text="Europa Deel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:id="@+id/txtEuropaDeel" />
+    <TextView
+        android:text="0 resultaten"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="125dp"
+        android:layout_height="25dp"
+        android:textColor="#e77d4d"
+        android:id="@+id/txtAantalLanden"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="15dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:weightSum="3"
+        android:id="@+id/linearLayout2">
+        <ImageButton
+            android:src="@drawable/Nederland"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#212a41"
+            android:id="@+id/btnLandKeuze1"
+            android:layout_marginLeft="15dp" />
+        <ImageButton
+            android:src="@drawable/Frankrijk"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#212a41"
+            android:id="@+id/btnLandKeuze2" />
+        <ImageButton
+            android:src="@drawable/Belgie"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#212a41"
+            android:id="@+id/btnLandKeuze3"
+            android:layout_marginRight="15dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:id="@+id/linearLayout3">
+        <TextView
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:textColor="#e77d4d"
+            android:id="@+id/txtLandKeuze1"
+            android:layout_weight="1"
+            android:layout_marginLeft="35dp"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <TextView
+            android:text="Noorwegen"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="109dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:textColor="#e77d4d"
+            android:id="@+id/txtLandKeuze2"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <TextView
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:textColor="#e77d4d"
+            android:id="@+id/txtLandKeuze3"
+            android:layout_weight="1"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:weightSum="3"
+        android:id="@+id/linearLayout4">
+        <ImageButton
+            android:src="@drawable/Nederland"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#212a41"
+            android:id="@+id/btnLandKeuze4"
+            android:layout_marginLeft="15dp" />
+        <ImageButton
+            android:src="@drawable/Nederland"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#212a41"
+            android:id="@+id/btnLandKeuze5" />
+        <ImageButton
+            android:src="@drawable/Nederland"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#212a41"
+            android:id="@+id/btnLandKeuze6"
+            android:layout_marginRight="15dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:id="@+id/linearLayout3">
+        <TextView
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:textColor="#e77d4d"
+            android:id="@+id/txtLandKeuze4"
+            android:layout_marginLeft="15dp"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <TextView
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:textColor="#e77d4d"
+            android:id="@+id/txtLandKeuze5"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <TextView
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:textColor="#e77d4d"
+            android:id="@+id/txtLandKeuze6"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

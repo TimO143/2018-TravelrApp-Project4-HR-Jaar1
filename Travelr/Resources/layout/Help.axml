@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bglandinfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:id="@+id/linearLayout1">
+        <ImageButton
+            android:src="@drawable/backarrowTransparent"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:id="@+id/btnBackLI" />
+        <TextView
+            android:text="Help Pagina"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="190dp"
+            android:textStyle="bold"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:id="@+id/txtHelpPagina" />
+    </LinearLayout>
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fillViewport="true"
+        android:id="@+id/scrollView1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout2">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout3">
+                <ImageView
+                    android:id="@+id/imgHulpLogo"
+                    android:src="@drawable/TravelrIcon"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+                <TextView
+                    android:text="Contact"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/txtHulpContact"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:layout_marginRight="47dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <TextView
+                android:text="Voor vragen mail info@Travelr.com"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="43.5dp"
+                android:textColor="#fdc2a7"
+                android:id="@+id/txtHulpContactInfo"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColorLink="#fdc2a7" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout4">
+                <ImageView
+                    android:src="@drawable/AccountInfo"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/imgHulpAccount" />
+                <TextView
+                    android:text="Wachtwoord wijzigen"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/txtHulppass"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <TextView
+                android:text="Om uw wachtwoord te wijzigen ga naar het hoofdmenu en klik op uw profiel"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fdc2a7"
+                android:id="@+id/txtHulppassinfo"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColorLink="#fdc2a7"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/linearLayout5">
+                <ImageView
+                    android:src="@drawable/btnhome"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/imgHulpHome" />
+                <TextView
+                    android:text="Home Knop"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/txtHulpHome"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:layout_marginRight="60dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <TextView
+                android:text="Om een ander deel van Europa te kiezen, gaat u naar de homepagina"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fdc2a7"
+                android:id="@+id/txtHulpHomeInfo"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColorLink="#fdc2a7" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/linearLayout5">
+                <ImageView
+                    android:id="@+id/imgHulpBack"
+                    android:src="@drawable/backarrowtransparent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+                <TextView
+                    android:text="Terug knop"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtHulpTerug"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="60dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <TextView
+                android:text="Door op de pijl terug te klikken, gaat u naar het vorige scherm"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fdc2a7"
+                android:id="@+id/txtHulpTerugInfo"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColorLink="#fdc2a7" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/linearLayout5">
+                <ImageView
+                    android:id="@+id/imghulpRecensie"
+                    android:src="@drawable/recensie"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+                <TextView
+                    android:text="Recensie schrijven"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtHulpRecensie"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="60dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <TextView
+                android:text="Om een recensie te schrijven, kiest u een gewenst land en klikt vervolgens op het recense icoon rechtsbovenin. Typ daarna uw recensie en klik op bevestig"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fdc2a7"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/txtHulpRecensieInfo"
+                android:gravity="center_horizontal"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/linearLayout8">
+                <ImageView
+                    android:id="@+id/imgHulpNederland"
+                    android:src="@drawable/nederland"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+                <TextView
+                    android:text="Informatie"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txthulpinformatie"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="60dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <TextView
+                android:text="Als u meer informatie wilt over een land, klik op de onderstreepte info"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fdc2a7"
+                android:id="@+id/txthulplandinfo"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColorLink="#fdc2a7" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout4">
+                <ImageView
+                    android:src="@drawable/btnSearch"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/imgHulpzoek" />
+                <TextView
+                    android:text="Zoek Knop"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/txtHulpZoeken"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <TextView
+                android:text="Via deze knop kunt u sneller een land zoeken"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fdc2a7"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/txtHulpZoekenInfo"
+                android:gravity="center_horizontal"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
